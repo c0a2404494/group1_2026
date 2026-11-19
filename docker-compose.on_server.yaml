@@ -9,7 +9,7 @@ services:
           #network_mode: host
     ports:
       - "127.0.0.1:5901:5901"
-    privileged: true
+    # privileged: true
     ipc: host
     runtime: nvidia
     environment:
