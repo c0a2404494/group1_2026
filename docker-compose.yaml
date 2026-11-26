@@ -1,6 +1,11 @@
+# 授業終了後に削除: 既存コンテナ(limesimuldemo_course-lime_simul_demo-1)と分けるためのプロジェクト名
+name: limesimuldemo_course_group
+
 services:
   lime_simul_demo:
-    image: course_lime-image
+    # 授業終了後に削除: 下の行を消して元の行(image: course_lime-image)に戻す
+    image: group_lime-image
+    # image: course_lime-image
     build:
       context: .
       dockerfile: Dockerfile
